@@ -1,0 +1,6 @@
+2024-01-23 10:23:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "Book" not found (this database is empty); SQL statement:
+SELECT idBook FROM Book ORDER BY idBook [42104-214]
+2024-01-23 10:23:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "Book" not found (this database is empty); SQL statement:
+SELECT idBook, isbn, titulo, autor, anho, disponible, portada FROM Book WHERE idBook=? [42104-214]
