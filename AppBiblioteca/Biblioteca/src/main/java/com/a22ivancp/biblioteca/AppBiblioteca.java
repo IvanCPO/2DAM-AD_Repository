@@ -2,7 +2,7 @@ package com.a22ivancp.biblioteca;
 
 import com.a22ivancp.biblioteca.controller.BookController;
 import com.a22ivancp.biblioteca.controller.IBookController;
-import com.a22ivancp.biblioteca.model.BibliotecaConnectionMaganer;
+import com.a22ivancp.biblioteca.model.EntityManagerUtil;
 import com.a22ivancp.biblioteca.model.Book;
 import com.a22ivancp.biblioteca.model.BookDAO;
 import com.a22ivancp.biblioteca.model.DAO;
@@ -35,7 +35,7 @@ public class AppBiblioteca {
 
     public static void main(String[] args) {
 
-        BibliotecaConnectionMaganer bibliotecaConnection = BibliotecaConnectionMaganer.getInstance();
+        EntityManagerUtil bibliotecaConnection = EntityManagerUtil.getInstance();
 
         DAO<Book> bookDAO = new BookDAO(bibliotecaConnection.getConnection());
 

@@ -5,6 +5,9 @@
  */
 package com.a22ivancp.biblioteca.model;
 
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.TypedQuery;
+
 import java.io.BufferedInputStream;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -19,88 +22,35 @@ import java.util.List;
  */
 public class BookDAO implements DAO<Book> {
 
-    private final Connection con;
+    private EntityManager em;
 
-    public BookDAO(Connection con) {
-        this.con = con;
+    public BookDAO() {
     }
 
     @Override
     public Book get(long idBook) {
-        try {
-            if (con != null && !con.isClosed()) {
-                // Crear Statement
-                try ( var st = con.prepareStatement("SELECT idBook, isbn, titulo, autor, anho, disponible, portada" +
-                        " FROM Book WHERE idBook=?");) {
-                    st.setInt(1, (int) idBook);
-                    // ResultSet:
-                    var rs = st.executeQuery();
-                    if (rs.next()) {
-                        Book book = new Book(rs.getInt("idBook"),
-                                rs.getString("isbn"), rs.getString("titulo"),
-                                rs.getString("autor"), rs.getInt("anho"),
-                                rs.getBoolean("disponible"),
-                                rs.getBytes("portada"));
-                        return book;
-
-                    }
-                }
-            }
-        } catch (SQLException ex) {
-            System.out.println("Error al obtener libro: " + ex.getMessage());
-        }
-        return null;
+        em = EntityManagerUtil.getInstance().createEntityManager();
+        Book book = em.find(Book.class,idBook);
+        em.close();
+        return book;
     }
 
     @Override
     public List<Book> getAll() {
-        List<Book> biblioteca = new ArrayList<>();
-        try {
-            if (con != null && !con.isClosed()) {
-                // Crear Statement
-                try ( Statement st = con.createStatement();) {
-                    // ResultSet:
-                    ResultSet rs = st.executeQuery("SELECT * FROM Book");
-                    while (rs.next()) {
-                        Book book = new Book(rs.getInt("idBook"),
-                                rs.getString("isbn"), rs.getString("titulo"),
-                                rs.getString("autor"), rs.getInt("anho"),
-                                rs.getBoolean("disponible"),
-                                rs.getBytes("portada"));
-                        biblioteca.add(book);
-                    }
-                }
-            }
-        } catch (SQLException ex) {
-            System.out.println("Error al leer libros: " + ex.getMessage());
-        }
+        em = EntityManagerUtil.getInstance().createEntityManager();
+        TypedQuery<Book> consulta = em.createQuery("SELECT b FROM Book b", Book.class);
+        List<Book> biblioteca = consulta.getResultList();
+        em.close();
         return biblioteca;
     }
 
     @Override
     public void save(Book book) {
-        try {
-            if (con != null && !con.isClosed()) {
-                // Crear Statement
-                try ( var ps = con.prepareStatement("INSERT "
-                        + "INTO Book (isbn, titulo, autor, anho, disponible, portada)"
-                        + " VALUES (?, ?, ?, ?, ?, ?)", Statement.RETURN_GENERATED_KEYS);) {
-                    //
-
-                    System.out.println("book = " + book);
-                    setBookValues(book, ps);
-                    ps.executeUpdate();
-                    // Asigno id:
-                    ResultSet rs = ps.getGeneratedKeys();
-                    if (rs.next()) {
-                        book.setIdBook(rs.getInt(1));
-                    }
-
-                }
-            }
-        } catch (SQLException ex) {
-            System.out.println("Error al insertar: " + ex.getMessage());
-        }
+        em = EntityManagerUtil.getInstance().createEntityManager();
+        em.getTransaction().begin();
+        em.persist(book);
+        em.getTransaction().commit();
+        em.close();
 
     }
 
@@ -115,53 +65,31 @@ public class BookDAO implements DAO<Book> {
 
     @Override
     public void update(Book book) {
-        try {
-            if (con != null && !con.isClosed()) {
-                // Crear Statement
-                try ( var ps = con.prepareStatement("UPDATE  "
-                        + "Book SET isbn=?, titulo=?, autor=?, "
-                        + "anho=?, disponible=?, portada=? WHERE idBook= ?");) {
-                    // 
-                    setBookValues(book, ps);
-                    ps.setInt(7, book.getIdBook());
-                    ps.executeUpdate();
-                }
-            }
-        } catch (SQLException ex) {
-            System.out.println("Error al actualizar: " + ex.getMessage());
-        }
+        em = EntityManagerUtil.getInstance().createEntityManager();
+        em.getTransaction().begin();
+        em.merge(book);
+        em.getTransaction().commit();
+        em.close();
     }
 
     @Override
-    public void delete(Book f) {
-        try {
-            if (con != null && !con.isClosed()) {
-                try ( var ps = con.prepareStatement("DELETE FROM "
-                        + "Book WHERE idBook=?")) {
-                    ps.setLong(1, f.getIdBook());
-                    ps.executeUpdate();
-                }
-            }
-        } catch (SQLException ex) {
-            System.out.println("ex.getMessage() = " + ex.getMessage());
-        }
+    public void delete(Book book) {
+        em = EntityManagerUtil.getInstance().createEntityManager();
+        em.getTransaction().begin();
+        em.remove(book);
+        em.getTransaction().commit();
+        em.close();
     }
 
     @Override
     public boolean deleteById(long idBook) {
-        try {
-            if (con != null && !con.isClosed()) {
-                try ( Statement ps = con.createStatement()) {
-                    ps.executeUpdate("DELETE FROM "
-                            + "Book WHERE idBook=" + idBook);
-                    return true;
-                }
-            }
-        } catch (SQLException ex) {
-
-            System.out.println("ex.getMessage() = " + ex.getMessage());
+        Book book = get(idBook);
+        if (book==null)
+            return false;
+        else{
+            delete(book);
+            return true;
         }
-        return false;
     }
 
     @Override

@@ -5,6 +5,8 @@
  */
 package com.a22ivancp.biblioteca.model;
 
+import jakarta.persistence.Entity;
+
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.io.*;
@@ -16,6 +18,7 @@ import java.util.Objects;
 /**
  * @author pepecalo
  */
+@Entity
 public class Book implements Serializable {
 
     //    private static final long serialVersionUID = 1L;

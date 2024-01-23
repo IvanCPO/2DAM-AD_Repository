@@ -35,7 +35,7 @@ public class AppInsertContido {
 
     public static void main(String[] args) {
 
-        BibliotecaConnectionMaganer connectionLibrary = BibliotecaConnectionMaganer.getInstance();
+        EntityManagerUtil connectionLibrary = EntityManagerUtil.getInstance();
 
         Connection con = connectionLibrary.getConnection();
 
