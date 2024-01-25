@@ -1,4 +1,9 @@
-package com.a22ivancp.biblioteca.model;
+package com.a22ivancp.biblioteca.model.h2DAO;
+
+import com.a22ivancp.biblioteca.model.Contido;
+import com.a22ivancp.biblioteca.model.DAO;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.TypedQuery;
 
 import java.sql.*;
 import java.util.ArrayList;

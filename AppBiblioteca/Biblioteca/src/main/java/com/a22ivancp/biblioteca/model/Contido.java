@@ -1,5 +1,10 @@
 package com.a22ivancp.biblioteca.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
 import java.util.Objects;
 
 /**
@@ -13,8 +18,11 @@ import java.util.Objects;
  * );
  * CREATE UNIQUE INDEX PRIMARY_KEY_9 ON PUBLIC.Contido (idContido);
  */
+@Entity
 public class Contido {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idContido;
     private Long idBook;
     private String contido;

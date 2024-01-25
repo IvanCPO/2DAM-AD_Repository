@@ -5,7 +5,7 @@
  */
 package com.a22ivancp.biblioteca.model;
 
-import jakarta.persistence.Entity;
+import jakarta.persistence.*;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
@@ -22,14 +22,21 @@ import java.util.Objects;
 public class Book implements Serializable {
 
     //    private static final long serialVersionUID = 1L;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer idBook;
     private String isbn;
+    @Column(name = "titulo")
     private String title;
+    @Column(name = "autor")
     private String author;
+    @Column(name = "anho")
     private Integer ano;
+    @Column(name = "disponible")
     private Boolean available;
+    @Lob
     private byte[] portada;
-
+    @Lob
     private String[] contido;
 
     private static final long serialVersionUID = 1L;

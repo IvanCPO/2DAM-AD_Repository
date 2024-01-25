@@ -2,9 +2,10 @@ package com.a22ivancp.biblioteca;
 
 import com.a22ivancp.biblioteca.controller.BookController;
 import com.a22ivancp.biblioteca.controller.IBookController;
-import com.a22ivancp.biblioteca.model.EntityManagerUtil;
+import com.a22ivancp.biblioteca.model.BibliotecaConnectionMaganer;
 import com.a22ivancp.biblioteca.model.Book;
-import com.a22ivancp.biblioteca.model.BookDAO;
+import com.a22ivancp.biblioteca.model.EntitiesDAOFactory;
+import com.a22ivancp.biblioteca.model.h2DAO.BookDAO;
 import com.a22ivancp.biblioteca.model.DAO;
 import com.a22ivancp.biblioteca.view.IBookView;
 import com.a22ivancp.biblioteca.view.BookView;
@@ -35,9 +36,7 @@ public class AppBiblioteca {
 
     public static void main(String[] args) {
 
-        EntityManagerUtil bibliotecaConnection = EntityManagerUtil.getInstance();
-
-        DAO<Book> bookDAO = new BookDAO(bibliotecaConnection.getConnection());
+        DAO<Book> bookDAO = EntitiesDAOFactory.getBookManager(EntitiesDAOFactory.OptionsDAO.HIBERNATE);
 
         IBookController bookControler = BookController.getInstance();
         bookControler.setDao(bookDAO);

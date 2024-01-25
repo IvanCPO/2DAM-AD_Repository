@@ -1,7 +1,7 @@
 
 package com.a22ivancp.biblioteca;
 
-import com.a22ivancp.biblioteca.model.EntityManagerUtil;
+import com.a22ivancp.biblioteca.model.BibliotecaConnectionMaganer;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -26,7 +26,7 @@ public class AppInsertBatch {
 
     public static void main(String[] args) {
 
-        EntityManagerUtil connectionLibrary = EntityManagerUtil.getInstance();
+        BibliotecaConnectionMaganer connectionLibrary = BibliotecaConnectionMaganer.getInstance();
 
         Connection con = connectionLibrary.getConnection();
 

@@ -3,10 +3,12 @@
  * Realizado con fines educativos.
  * Puede modificarlo siempre que no lo haga con fines comerciales.
  */
-package com.a22ivancp.biblioteca.model;
+package com.a22ivancp.biblioteca.model.hibernate;
 
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.TypedQuery;
+import com.a22ivancp.biblioteca.model.Book;
+import com.a22ivancp.biblioteca.model.DAO;
+import com.a22ivancp.biblioteca.model.EntityManagerUtil;
+import jakarta.persistence.*;
 
 import java.io.BufferedInputStream;
 import java.io.FileInputStream;
@@ -20,11 +22,11 @@ import java.util.List;
  *
  * @autor pepecalo
  */
-public class BookDAO implements DAO<Book> {
+public class BookDAOFactory implements DAO<Book> {
 
     private EntityManager em;
 
-    public BookDAO() {
+    public BookDAOFactory() {
     }
 
     @Override
@@ -119,7 +121,7 @@ public class BookDAO implements DAO<Book> {
                 try ( PreparedStatement ps = con.prepareStatement("UPDATE  "
                         + "Book SET portada=? WHERE idBook= ?");
                       var bis = new BufferedInputStream(new FileInputStream(f));) {
-                    // 
+                    //
                     ps.setBinaryStream(1, bis);
                     ps.setInt(2, book.getIdBook());
                     ps.executeUpdate();
@@ -170,6 +172,7 @@ public class BookDAO implements DAO<Book> {
         } catch (SQLException ex) {
             System.out.println("Error al borrar los Libros. " + ex.getMessage());
         }
-}
+    }
+
 
 }

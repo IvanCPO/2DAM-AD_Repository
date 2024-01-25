@@ -2,6 +2,8 @@
 package com.a22ivancp.biblioteca;
 
 import com.a22ivancp.biblioteca.model.*;
+import com.a22ivancp.biblioteca.model.h2DAO.BookDAO;
+import com.a22ivancp.biblioteca.model.h2DAO.ContidoDAO;
 
 
 import java.io.IOException;
@@ -35,7 +37,7 @@ public class AppInsertContido {
 
     public static void main(String[] args) {
 
-        EntityManagerUtil connectionLibrary = EntityManagerUtil.getInstance();
+        BibliotecaConnectionMaganer connectionLibrary = BibliotecaConnectionMaganer.getInstance();
 
         Connection con = connectionLibrary.getConnection();
 
