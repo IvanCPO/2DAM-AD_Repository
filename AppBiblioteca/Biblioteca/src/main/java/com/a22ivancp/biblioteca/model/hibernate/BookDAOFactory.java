@@ -31,7 +31,7 @@ public class BookDAOFactory implements DAO<Book> {
 
     @Override
     public Book get(long idBook) {
-        em = EntityManagerUtil.getInstance().createEntityManager();
+        em = EntityManagerUtil.createEntityManager();
         Book book = em.find(Book.class,idBook);
         em.close();
         return book;
@@ -39,7 +39,7 @@ public class BookDAOFactory implements DAO<Book> {
 
     @Override
     public List<Book> getAll() {
-        em = EntityManagerUtil.getInstance().createEntityManager();
+        em = EntityManagerUtil.createEntityManager();
         TypedQuery<Book> consulta = em.createQuery("SELECT b FROM Book b", Book.class);
         List<Book> biblioteca = consulta.getResultList();
         em.close();
@@ -48,7 +48,7 @@ public class BookDAOFactory implements DAO<Book> {
 
     @Override
     public void save(Book book) {
-        em = EntityManagerUtil.getInstance().createEntityManager();
+        em = EntityManagerUtil.createEntityManager();
         em.getTransaction().begin();
         em.persist(book);
         em.getTransaction().commit();
@@ -67,7 +67,7 @@ public class BookDAOFactory implements DAO<Book> {
 
     @Override
     public void update(Book book) {
-        em = EntityManagerUtil.getInstance().createEntityManager();
+        em = EntityManagerUtil.createEntityManager();
         em.getTransaction().begin();
         em.merge(book);
         em.getTransaction().commit();
@@ -76,7 +76,7 @@ public class BookDAOFactory implements DAO<Book> {
 
     @Override
     public void delete(Book book) {
-        em = EntityManagerUtil.getInstance().createEntityManager();
+        em = EntityManagerUtil.createEntityManager();
         em.getTransaction().begin();
         em.remove(book);
         em.getTransaction().commit();
@@ -96,82 +96,37 @@ public class BookDAOFactory implements DAO<Book> {
 
     @Override
     public List<Integer> getAllIds() {
-        List<Integer> ids = new ArrayList<>();
-        try {
-            if (con != null && !con.isClosed()) {
-                // Crear Statement
-                try ( Statement st = con.createStatement();) {
-                    // ResultSet:
-                    ResultSet rs = st.executeQuery("SELECT idBook FROM Book ORDER BY idBook");
-                    while (rs.next()) {
-                        ids.add(rs.getInt("idBook"));
-                    }
-                }
-            }
-        } catch (SQLException ex) {
-            System.err.println("Error al leer libros: " + ex.getMessage());
-        }
+        em = EntityManagerUtil.createEntityManager();
+        List<Integer> ids = em.createQuery("SELECT idBook FROM Book ORDER BY idBook", Integer.class).getResultList();
+        em.close();
         return ids;
     }
 
     public void updateLOB(Book book, String f) {
-        try {
-            if (con != null && !con.isClosed()) {
-                // Crear Statement
-                try ( PreparedStatement ps = con.prepareStatement("UPDATE  "
-                        + "Book SET portada=? WHERE idBook= ?");
-                      var bis = new BufferedInputStream(new FileInputStream(f));) {
-                    //
-                    ps.setBinaryStream(1, bis);
-                    ps.setInt(2, book.getIdBook());
-                    ps.executeUpdate();
-                    book.setPortada(f);
-                } catch (FileNotFoundException ex) {
-                    System.out.println("Archivo non atopado: "
-                            + ex.getMessage());
-                } catch (IOException ex) {
-                    System.out.println("Erro de E/S : " + ex.getMessage());
-                }
-            }
-        } catch (SQLException ex) {
-            System.out.println("Error al actualizar: " + ex.getMessage());
-        }
+        book.setPortada(f);
+        em = EntityManagerUtil.createEntityManager();
+        em.getTransaction().begin();
+        em.merge(book);
+        em.getTransaction().commit();
+        em.close();
     }
 
     @Override
     public void updateLOBById(long id, String f) {
-        try {
-            if (con != null && !con.isClosed()) {
-                // Crear Statement
-                try ( PreparedStatement ps = con.prepareStatement("UPDATE  "
-                        + "Book SET portada=? WHERE idBook= ?");
-                      var bis = new BufferedInputStream(new FileInputStream(f));) {
-                    //
-                    ps.setBinaryStream(1, bis);
-                    ps.setLong(2, id);
-                    ps.executeUpdate();
-                } catch (FileNotFoundException ex) {
-                    System.out.println("Archivo non atopado: " + ex.getMessage());
-                } catch (IOException ex) {
-                    System.out.println("Erro de E/S : " + ex.getMessage());
-                }
-            }
-        } catch (SQLException ex) {
-            System.out.println("Error al actualizar: " + ex.getMessage());
-        }
+        Book book = this.get(id);
+        this.updateLOB(book,f);
     }
 
     @Override
     public void deleteAll() {
-        try {
-            if (con != null && !con.isClosed()) {
-                try ( Statement ps = con.createStatement()) {
-                    ps.executeUpdate("DELETE FROM Book");
-                }
-            }
-        } catch (SQLException ex) {
-            System.out.println("Error al borrar los Libros. " + ex.getMessage());
+        em = EntityManagerUtil.createEntityManager();
+        em.getTransaction().begin();
+        List<Book> list = this.getAll();
+        for (int i = 0; i < list.size(); i++) {
+            em.remove(list.get(i));
         }
+        em.getTransaction().commit();
+        em.close();
     }
 
 

@@ -36,7 +36,7 @@ public class Book implements Serializable {
     private Boolean available;
     @Lob
     private byte[] portada;
-    @Lob
+    @Transient
     private String[] contido;
 
     private static final long serialVersionUID = 1L;

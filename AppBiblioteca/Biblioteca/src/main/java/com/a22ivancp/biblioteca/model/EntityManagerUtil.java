@@ -20,7 +20,7 @@ public class EntityManagerUtil {
     }
     public static EntityManagerFactory getInstance(){
         if (emf == null)
-            synchronized (EntityManagerUtil.class) {
+            synchronized (EntityManagerFactory.class) {
                 if (emf == null)
                     emf = Persistence.createEntityManagerFactory("default"); // Nombre de la unidad de persistencia
             }
@@ -28,6 +28,7 @@ public class EntityManagerUtil {
     }
     public static EntityManager createEntityManager(){
         EntityManager em = null;
+        getInstance();
         if (emf!=null && emf.isOpen())
             synchronized (EntityManagerUtil.class) {
                 if (emf!=null && emf.isOpen())

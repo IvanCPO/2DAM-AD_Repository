@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a7ee3a76-93db-4209-99d5-f0c9c103c738" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/E:/98 - Bases de datos/biblioteca/biblioteca.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/E:/98 - Bases de datos/biblioteca/biblioteca.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/E:/98 - Bases de datos/biblioteca/biblioteca.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/E:/98 - Bases de datos/biblioteca/biblioteca.trace.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/a22ivancp/biblioteca/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/a22ivancp/biblioteca/model/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/a22ivancp/biblioteca/model/EntitiesDAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/a22ivancp/biblioteca/model/EntitiesDAOFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/a22ivancp/biblioteca/model/EntityManagerUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/a22ivancp/biblioteca/model/EntityManagerUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/a22ivancp/biblioteca/model/hibernate/BookDAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/a22ivancp/biblioteca/model/hibernate/BookDAOFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/a22ivancp/biblioteca/model/BibliotecaConnectionMaganer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/a22ivancp/biblioteca/model/BibliotecaConnectionMaganer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/a22ivancp/biblioteca/model/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/a22ivancp/biblioteca/model/Book.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/a22ivancp/biblioteca/model/EntitiesDAOFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/a22ivancp/biblioteca/model/EntitiesDAOFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bdbiblioteca/biblioteca.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/../../bdbiblioteca/biblioteca.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bdbiblioteca/biblioteca.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/../../bdbiblioteca/biblioteca.trace.db" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2Z7SSj05XphRRRi1G2qWVKx4TKm" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.com.a22ivancp.biblioteca.AppBiblioteca.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/media/MV-Linux/MaquinasVirtuais/a22ivancp/repositorios/2DAM-AD_Repository/AppBiblioteca/Biblioteca/src/main/java/com/a22ivancp/biblioteca/model/hibernate&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/a22ivancp/biblioteca/model/hibernate" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.a22ivancp.biblioteca.orm" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.com.a22ivancp.biblioteca.AppBiblioteca">
+    <configuration name="AppBiblioteca" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.pepinho.programacion.biblioteca.AppBiblioteca" />
+      <module name="Boletin10.03" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pepinho.programacion.biblioteca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppInsertContido" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.pepinho.programacion.biblioteca.AppInsertContido" />
+      <module name="Boletin10.03" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pepinho.programacion.biblioteca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.a22ivancp.biblioteca.AppBiblioteca" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.a22ivancp.biblioteca.AppBiblioteca" />
+      <module name="Boletin10.03" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.a22ivancp.biblioteca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.com.a22ivancp.biblioteca.AppBiblioteca" />
+        <item itemvalue="Application.AppBiblioteca" />
+        <item itemvalue="Application.AppInsertContido" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.9-corretto-17.0.9-f644763e9732-220112af" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a7ee3a76-93db-4209-99d5-f0c9c103c738" name="Changes" comment="" />
+      <created>1701771627239</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1701771627239</updated>
+    </task>
+    <servers />
+  </component>
+</project>

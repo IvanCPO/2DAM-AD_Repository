@@ -9,7 +9,7 @@ public class EntitiesDAOFactory {
         H2,HIBERNATE;
     }
 
-    public static DAO getBookManager(OptionsDAO OPTION){
+    public static DAO<Book> getBookManager(OptionsDAO OPTION){
         DAO dao;
         switch (OPTION){
             case H2:
