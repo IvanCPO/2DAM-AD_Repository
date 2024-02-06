@@ -5,21 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fbdd305e-12b6-4fe9-9511-b993b54db40d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../AppBiblioteca/Biblioteca/E/dbBiblioteca/biblioteca/biblioteca.mv.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AppBiblioteca/Biblioteca/E/dbBiblioteca/biblioteca/biblioteca.trace.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AppBiblioteca/Biblioteca/E:/98 - Bases de datos/biblioteca/biblioteca.mv.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AppBiblioteca/Biblioteca/E:/98 - Bases de datos/biblioteca/biblioteca.trace.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AppBiblioteca/Biblioteca/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AppBiblioteca/Biblioteca/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AppBiblioteca/Biblioteca/src/main/java/com/a22ivancp/biblioteca/model/BibliotecaConnectionMaganer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AppBiblioteca/Biblioteca/src/main/java/com/a22ivancp/biblioteca/model/BibliotecaConnectionMaganer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AppBiblioteca/Biblioteca/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AppBiblioteca/Biblioteca/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AppBiblioteca/Biblioteca/src/main/java/com/a22ivancp/biblioteca/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AppBiblioteca/Biblioteca/src/main/java/com/a22ivancp/biblioteca/model/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AppBiblioteca/Biblioteca/src/main/java/com/a22ivancp/biblioteca/model/EntityManagerUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AppBiblioteca/Biblioteca/src/main/java/com/a22ivancp/biblioteca/model/EntityManagerUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AppBiblioteca/Biblioteca/src/main/java/com/a22ivancp/biblioteca/model/hibernate/BookDAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AppBiblioteca/Biblioteca/src/main/java/com/a22ivancp/biblioteca/model/hibernate/BookDAOFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AppBiblioteca/Biblioteca/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AppBiblioteca/Biblioteca/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AppBiblioteca/Biblioteca/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AppBiblioteca/Biblioteca/target/classes/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AppBiblioteca/Biblioteca/target/classes/com/a22ivancp/biblioteca/model/BibliotecaConnectionMaganer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../AppBiblioteca/Biblioteca/target/classes/com/a22ivancp/biblioteca/model/BibliotecaConnectionMaganer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AppBiblioteca/Biblioteca/target/classes/com/a22ivancp/biblioteca/model/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/../AppBiblioteca/Biblioteca/target/classes/com/a22ivancp/biblioteca/model/Book.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bdbiblioteca/biblioteca.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/../bdbiblioteca/biblioteca.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bdbiblioteca/biblioteca.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/../bdbiblioteca/biblioteca.trace.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +60,13 @@
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.9-corretto-17.0.9-f644763e9732-220112af" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

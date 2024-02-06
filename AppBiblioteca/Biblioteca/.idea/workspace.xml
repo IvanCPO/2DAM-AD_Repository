@@ -5,20 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7ee3a76-93db-4209-99d5-f0c9c103c738" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/E:/98 - Bases de datos/biblioteca/biblioteca.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/E:/98 - Bases de datos/biblioteca/biblioteca.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/E:/98 - Bases de datos/biblioteca/biblioteca.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/E:/98 - Bases de datos/biblioteca/biblioteca.trace.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/a22ivancp/biblioteca/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/a22ivancp/biblioteca/model/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/a22ivancp/biblioteca/model/EntitiesDAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/a22ivancp/biblioteca/model/EntitiesDAOFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/a22ivancp/biblioteca/model/EntityManagerUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/a22ivancp/biblioteca/model/EntityManagerUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/a22ivancp/biblioteca/model/hibernate/BookDAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/a22ivancp/biblioteca/model/hibernate/BookDAOFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/a22ivancp/biblioteca/model/BibliotecaConnectionMaganer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/a22ivancp/biblioteca/model/BibliotecaConnectionMaganer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/a22ivancp/biblioteca/model/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/a22ivancp/biblioteca/model/Book.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/a22ivancp/biblioteca/model/EntitiesDAOFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/a22ivancp/biblioteca/model/EntitiesDAOFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bdbiblioteca/biblioteca.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/../../bdbiblioteca/biblioteca.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bdbiblioteca/biblioteca.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/../../bdbiblioteca/biblioteca.trace.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,16 +31,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.com.a22ivancp.biblioteca.AppBiblioteca.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/media/MV-Linux/MaquinasVirtuais/a22ivancp/repositorios/2DAM-AD_Repository/AppBiblioteca/Biblioteca/src/main/java/com/a22ivancp/biblioteca/model/hibernate&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.com.a22ivancp.biblioteca.AppBiblioteca.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/media/MV-Linux/MaquinasVirtuais/a22ivancp/repositorios/2023-DI-a22ivancp"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/com/a22ivancp/biblioteca/model/hibernate" />

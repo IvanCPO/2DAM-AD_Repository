@@ -35,6 +35,7 @@ public class Book implements Serializable {
     @Column(name = "disponible")
     private Boolean available;
     @Lob
+    @Basic(fetch = FetchType.LAZY)
     private byte[] portada;
     @Transient
     private String[] contido;
