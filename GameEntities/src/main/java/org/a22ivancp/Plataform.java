@@ -1,11 +1,17 @@
 package org.a22ivancp;
 
-import java.util.Objects;
+import jakarta.persistence.*;
 
+import java.util.Objects;
+@Entity(name = "\"Plataforma\"")
 public class Plataform {
 
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(length = 32)
     private Long idPlataforma;
+    @Column(length = 128,
+            nullable = false)
     private String nombre;
 
     public Plataform() {
