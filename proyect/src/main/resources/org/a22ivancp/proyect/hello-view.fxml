@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="org.a22ivancp.proyect.Controller">
+    <HBox>
+        <ImageView fitHeight="200" fitWidth="200" preserveRatio="true" />
+        <GridPane>
+            <Label text="Name:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+            <Label text="Surname:" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+            <TextField GridPane.columnIndex="3" GridPane.fillWidth="2" GridPane.rowIndex="0" />
+
+            <Label text="Birthday:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+            <Label text="Country:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+            <Label text="Province:" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <TextField GridPane.columnIndex="3" GridPane.rowIndex="2" />
+
+            <Label text="City:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+            <Label text="School:" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="4" />
+
+            <Label text="Course:" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <TextField GridPane.columnIndex="3" GridPane.rowIndex="4" />
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+
+        </GridPane>
+    </HBox>
+    <HBox>
+        <TableView>
+
+        </TableView>
+        <VBox>
+            <Button text="Add" />
+            <Button text="Edit" />
+            <Button text="Remove" />
+        </VBox>
+    </HBox>
+</VBox>

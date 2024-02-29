@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fbdd305e-12b6-4fe9-9511-b993b54db40d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../AppBiblioteca/Biblioteca/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AppBiblioteca/Biblioteca/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AppBiblioteca/Biblioteca/src/main/java/com/a22ivancp/biblioteca/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AppBiblioteca/Biblioteca/src/main/java/com/a22ivancp/biblioteca/model/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GameEntities/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GameEntities/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GameEntities/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GameEntities/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bdjuegosh2.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/../bdjuegosh2.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bdjuegosh2.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/../bdjuegosh2.trace.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
