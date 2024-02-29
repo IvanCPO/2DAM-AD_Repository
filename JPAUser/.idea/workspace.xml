@@ -5,11 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10f022ba-7eec-468d-b7e6-f99ef89eade2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../AppBiblioteca/Biblioteca/E:/98 - Bases de datos/biblioteca/biblioteca.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/../AppBiblioteca/Biblioteca/E:/98 - Bases de datos/biblioteca/biblioteca.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AppBiblioteca/Biblioteca/E:/98 - Bases de datos/biblioteca/biblioteca.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/../AppBiblioteca/Biblioteca/E:/98 - Bases de datos/biblioteca/biblioteca.trace.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AppBiblioteca/Biblioteca/src/main/java/com/a22ivancp/biblioteca/model/hibernate/BookDAOFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AppBiblioteca/Biblioteca/src/main/java/com/a22ivancp/biblioteca/model/hibernate/BookDAOFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AppBiblioteca/Biblioteca/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AppBiblioteca/Biblioteca/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AppBiblioteca/Biblioteca/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AppBiblioteca/Biblioteca/target/classes/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proyect/src/main/java/org/a22ivancp/proyect/model/entities/Alumno.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proyect/src/main/java/org/a22ivancp/proyect/model/entities/Centro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proyect/src/main/java/org/a22ivancp/proyect/model/entities/Direccion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proyect/src/main/java/org/a22ivancp/proyect/model/entities/Titulo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proyect/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proyect/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../proyect/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proyect/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/../proyect/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proyect/src/main/resources/org/a22ivancp/proyect/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../proyect/src/main/resources/org/a22ivancp/proyect/hello-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
